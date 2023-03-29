@@ -1,33 +1,30 @@
-NTL:
-    number: 0
-    cve_list: []
 libsodium:
     number: 3
     cve_list:
     - CVE-2021-38599
     - CVE-2020-6018
     - CVE-2019-20138
-Broadcast Encryption:
-    number: 1
+RELIC:
+    number: 4
     cve_list:
-    - CVE-2019-10099
-CryptoPP:
-    number: 5
+    - CVE-2020-36316
+    - CVE-2020-36315
+    - CVE-2017-9246
+    - CVE-2013-0284
+Crypto++:
+    number: 8
     cve_list:
     - CVE-2021-43398
+    - CVE-2021-40530
+    - CVE-2019-14318
     - CVE-2017-9434
     - CVE-2016-9939
+    - CVE-2016-7544
     - CVE-2016-7420
     - CVE-2016-3995
-NaCl:
-    number: 6
-    cve_list:
-    - CVE-2021-32685
-    - CVE-2015-5659
-    - CVE-2015-3335
-    - CVE-2015-0565
-    - CVE-2013-0886
-    - CVE-2013-0884
+OpenABE:
+    number: 0
+    cve_list: []
 MIRACL Crypto SDK:
     number: 6
     cve_list:
@@ -37,22 +34,22 @@ MIRACL Crypto SDK:
     - CVE-2020-8912
     - CVE-2020-8911
     - CVE-2019-0112
-OpenABE:
+NTL:
     number: 0
     cve_list: []
-RELIC:
-    number: 4
+Broadcast Encryption:
+    number: 1
     cve_list:
-    - CVE-2020-36316
-    - CVE-2020-36315
-    - CVE-2017-9246
-    - CVE-2013-0284
-JPBC:
-    number: 0
-    cve_list: []
-GMSSL:
-    number: 0
-    cve_list: []
+    - CVE-2019-10099
+NaCl:
+    number: 6
+    cve_list:
+    - CVE-2021-32685
+    - CVE-2015-5659
+    - CVE-2015-3335
+    - CVE-2015-0565
+    - CVE-2013-0886
+    - CVE-2013-0884
 Proxy Re-cryptography Library:
     number: 23
     cve_list:
@@ -79,13 +76,25 @@ Proxy Re-cryptography Library:
     - CVE-2002-0587
     - CVE-2002-0586
     - CVE-2000-0681
+JPBC:
+    number: 0
+    cve_list: []
+GMSSL:
+    number: 0
+    cve_list: []
+CONIKS:
+    number: 0
+    cve_list: []
 GoPBC:
     number: 0
     cve_list: []
 GoFE:
     number: 0
     cve_list: []
-CONIKS:
+CryptoTools:
+    number: 0
+    cve_list: []
+ENCRYPTO_utils:
     number: 0
     cve_list: []
 Private Join and Compute:
@@ -109,16 +118,16 @@ Private Join and Compute:
     - CVE-2011-0016
     - CVE-2008-1156
     - CVE-2001-1473
-ENCRYPTO_utils:
-    number: 0
-    cve_list: []
-CryptoTools:
-    number: 0
-    cve_list: []
 TFHE:
     number: 0
     cve_list: []
 palisade:
+    number: 0
+    cve_list: []
+HELIB:
+    number: 0
+    cve_list: []
+lattigo:
     number: 0
     cve_list: []
 SEAL:
@@ -132,29 +141,20 @@ SEAL:
     - CVE-2007-5971
     - CVE-2001-1191
     - CVE-2001-0982
-HELIB:
-    number: 0
-    cve_list: []
-bellman:
-    number: 0
-    cve_list: []
-lattigo:
-    number: 0
-    cve_list: []
 Bulletproofs:
     number: 1
     cve_list:
     - CVE-2022-29566
-libSTARK:
+bellman:
     number: 0
     cve_list: []
 libsnark:
     number: 0
     cve_list: []
-blockchain-crypto-mpc:
+libSTARK:
     number: 0
     cve_list: []
-vrf-solidity:
+blockchain-crypto-mpc:
     number: 0
     cve_list: []
 SolCrypto:
@@ -163,6 +163,173 @@ SolCrypto:
 liboqs:
     number: 0
     cve_list: []
+vrf-solidity:
+    number: 0
+    cve_list: []
+rlwekex:
+    number: 0
+    cve_list: []
+Jasypt:
+    number: 1
+    cve_list:
+    - CVE-2014-9970
+Bouncy Castle:
+    number: 23
+    cve_list:
+    - CVE-2022-45146
+    - CVE-2020-28052
+    - CVE-2020-26939
+    - CVE-2020-15522
+    - CVE-2019-17359
+    - CVE-2018-5382
+    - CVE-2018-1000613
+    - CVE-2018-1000180
+    - CVE-2016-2427
+    - CVE-2016-1000352
+    - CVE-2016-1000346
+    - CVE-2016-1000345
+    - CVE-2016-1000344
+    - CVE-2016-1000343
+    - CVE-2016-1000342
+    - CVE-2016-1000341
+    - CVE-2016-1000340
+    - CVE-2016-1000339
+    - CVE-2016-1000338
+    - CVE-2015-7940
+    - CVE-2015-6644
+    - CVE-2013-1624
+    - CVE-2007-6721
+Tink:
+    number: 1
+    cve_list:
+    - CVE-2020-8929
+"\u5929\u5B89TASSL":
+    number: 0
+    cve_list: []
+EverCrypt:
+    number: 0
+    cve_list: []
+PoralSSL:
+    number: 0
+    cve_list: []
+Keyczar:
+    number: 0
+    cve_list: []
+Cryptlib:
+    number: 1
+    cve_list:
+    - CVE-2018-12433
+Botan:
+    number: 25
+    cve_list:
+    - CVE-2022-43705
+    - CVE-2021-40529
+    - CVE-2021-24115
+    - CVE-2018-9860
+    - CVE-2018-9127
+    - CVE-2018-20187
+    - CVE-2018-12435
+    - CVE-2017-2801
+    - CVE-2017-14737
+    - CVE-2016-9132
+    - CVE-2016-8871
+    - CVE-2016-6879
+    - CVE-2016-6878
+    - CVE-2016-2850
+    - CVE-2016-2849
+    - CVE-2016-2196
+    - CVE-2016-2195
+    - CVE-2016-2194
+    - CVE-2015-7827
+    - CVE-2015-7826
+    - CVE-2015-7825
+    - CVE-2015-7824
+    - CVE-2015-5727
+    - CVE-2015-5726
+    - CVE-2014-9742
+Nettle:
+    number: 8
+    cve_list:
+    - CVE-2021-4209
+    - CVE-2021-3580
+    - CVE-2021-20305
+    - CVE-2018-16869
+    - CVE-2016-6489
+    - CVE-2015-8805
+    - CVE-2015-8804
+    - CVE-2015-8803
+GnuPG:
+    number: 69
+    cve_list:
+    - CVE-2022-34903
+    - CVE-2022-3219
+    - CVE-2021-3349
+    - CVE-2020-25125
+    - CVE-2020-24972
+    - CVE-2019-9149
+    - CVE-2019-6690
+    - CVE-2019-14855
+    - CVE-2019-13050
+    - CVE-2018-9234
+    - CVE-2018-19205
+    - CVE-2018-12356
+    - CVE-2018-12020
+    - CVE-2018-1000858
+    - CVE-2016-6313
+    - CVE-2016-1404
+    - CVE-2015-1607
+    - CVE-2015-1606
+    - CVE-2015-0837
+    - CVE-2014-9087
+    - CVE-2014-5270
+    - CVE-2014-4617
+    - CVE-2014-3591
+    - CVE-2014-3564
+    - CVE-2014-1929
+    - CVE-2014-1928
+    - CVE-2014-1927
+    - CVE-2014-1921
+    - CVE-2013-7323
+    - CVE-2013-6952
+    - CVE-2013-4576
+    - CVE-2013-4402
+    - CVE-2013-4351
+    - CVE-2013-4242
+    - CVE-2012-6581
+    - CVE-2012-6580
+    - CVE-2012-6579
+    - CVE-2012-6578
+    - CVE-2012-6085
+    - CVE-2012-4884
+    - CVE-2012-3587
+    - CVE-2012-0954
+    - CVE-2010-2547
+    - CVE-2008-1530
+    - CVE-2007-1269
+    - CVE-2007-1268
+    - CVE-2007-1267
+    - CVE-2007-1266
+    - CVE-2007-1265
+    - CVE-2007-1264
+    - CVE-2007-1263
+    - CVE-2006-6235
+    - CVE-2006-6169
+    - CVE-2006-3746
+    - CVE-2006-3082
+    - CVE-2006-0455
+    - CVE-2006-0049
+    - CVE-2003-0978
+    - CVE-2003-0971
+    - CVE-2003-0256
+    - CVE-2003-0255
+    - CVE-2001-0522
+    - CVE-2001-0273
+    - CVE-2001-0072
+    - CVE-2001-0071
+    - CVE-2000-1214
+    - CVE-2000-1213
+    - CVE-2000-1040
+    - CVE-2000-0974
 OpenSSL:
     number: 413
     cve_list:
@@ -579,49 +746,3 @@ OpenSSL:
     - CVE-2000-1254
     - CVE-2000-0535
     - CVE-1999-0428
-Jasypt:
-    number: 1
-    cve_list:
-    - CVE-2014-9970
-rlwekex:
-    number: 0
-    cve_list: []
-Tink:
-    number: 1
-    cve_list:
-    - CVE-2020-8929
-Bouncy Castle:
-    number: 23
-    cve_list:
-    - CVE-2022-45146
-    - CVE-2020-28052
-    - CVE-2020-26939
-    - CVE-2020-15522
-    - CVE-2019-17359
-    - CVE-2018-5382
-    - CVE-2018-1000613
-    - CVE-2018-1000180
-    - CVE-2016-2427
-    - CVE-2016-1000352
-    - CVE-2016-1000346
-    - CVE-2016-1000345
-    - CVE-2016-1000344
-    - CVE-2016-1000343
-    - CVE-2016-1000342
-    - CVE-2016-1000341
-    - CVE-2016-1000340
-    - CVE-2016-1000339
-    - CVE-2016-1000338
-    - CVE-2015-7940
-    - CVE-2015-6644
-    - CVE-2013-1624
-    - CVE-2007-6721
-"\u5929\u5B89TASSL":
-    number: 0
-    cve_list: []
-EverCrypt:
-    number: 0
-    cve_list: []
-PoralSSL:
-    number: 0
-    cve_list: []

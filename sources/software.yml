@@ -16,7 +16,7 @@
   url: http://www.shoup.net/ntl/
   description: "NTL 是一个数学库，提供高效的实现了数论和代数算法的C++类。它包括大整数算术、有限域和多项式算术、矩阵算术和线性代数、以及可能涉及到的许多其他领域的工具。"
 
-- name: CryptoPP 
+- name: Crypto++ 
   language: "C/C++"
   application: 加密库
   url: https://www.cryptopp.com/
@@ -251,3 +251,32 @@
   url: https://tls.mbed.org/tech-updates/blog/a-tale-of-two-libraries-openssl-and-mbedtls
   description: "一个轻量级的开源框架，提供了许多不同类型的加密算法和协议的实现，如TLS、DTLS、HTTPS、SSH、IPsec等。PolarSSL 已被 ARM 收购并更名为 mbed TLS。"
 
+- name: Cryptlib
+  language: C语言
+  application: 加密库
+  url: https://www.cs.auckland.ac.nz/~pgut001/cryptlib/
+  description: "一个常见密码学功能的库，支持对称加密、非对称加密、数字签名、证书管理、SSL、S/MIME、OpenPGP以及  PKCS #11 等功能。"
+
+- name: Keyczar
+  language: 多语言
+  application: 加密库
+  url: https://github.com/Keyczar/keyczar
+  description: "一个非常易用的开源加密库，提供简单而安全的API，支持AES、RSA、DSA、HMAC、HMAC-SHA1、SHA1，以及HMAC-SHA256 等密码学算法，适用于Java、Python、C++等多种编程语言。"
+
+- name: Botan
+  language: C++
+  application: 加密库
+  url: https://botan.randombit.net/
+  description: "一个C++语言的密码学库，提供丰富、现代和易用的API，支持对称加密、非对称加密、数字签名、证书管理、TLS和一些杂项算法等功能。"
+
+- name: GnuPG
+  language: C语言
+  application: 加密工具
+  url: https://www.gnupg.org/
+  description: "一个自由、开源的隐私工具，支持Pgp、S/MIME和OpenPGP等协议，提供加密、数字签名、认证和键管理等功能。GnuPG 最初由德国的Werner Koch 开发。"
+
+- name: Nettle
+  language: C语言
+  application: 加密库
+  url: https://www.lysator.liu.se/~nisse/nettle/
+  description: "一个轻量级、快速和易用的密码学库，提供了对称加密、非对称加密、HMAC、DSA、EMSA-PKCS1-v1_5、RSA、HMAC-SHA1，以及 blake2、curve25519、ChaCha20 和 Poly1305 等功能，支持多种操作系统和处理器平台。"
