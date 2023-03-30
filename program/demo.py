@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 import re
+from lxml import html
 
 SEARCH_MITRE_URL = "https://cve.mitre.org/cgi-bin/cvekey.cgi?"
 
@@ -21,6 +22,9 @@ RESULT = {}
 
 FINAL_NUMBER = 0
 
+# 避免重复
+TOTAL_CVE_LIST = []
+
 lock = threading.Lock()  # 锁，防止结果同时写入
 
 def read_software_info():
@@ -29,35 +33,45 @@ def read_software_info():
     return software_data
 
 def parse_response_info(response):
-    soup = BeautifulSoup(response.text, 'html.parser')
+    cve_list = {}
     
-    # cve_number
-    div = soup.find('div', {'class': 'smaller', 'style': 'background-color:#e0dbd2; padding:3px; border:1px solid #706c60; margin-bottom:10px'})
-    b = div.find('b')
-    cve_number = int(b.text)
+    soup = html.fromstring(response.content)       
     
-    # cve_list
-    cve_list = []
-    cve_re = re.compile(r'^CVE-\d{4}-\d{4,}$')  # 匹配CVE编号的正则表达式
-    tr_list = soup.find_all('tr')
-    for tr in tr_list:
-        a = tr.find('a')
-        if a is not None:
-            cve_id = a.text
-            if cve_re.match(cve_id):
-                cve_list.append(cve_id)
+    # 使用 XPath 选择器定位表格元素
+    table = soup.xpath("//div[@id='TableWithRules']//table")[0]
+
+    # 定位表格头行和数据行
+    header_row, *data_rows = table.xpath(".//tr")
+
+    # 获取表格头单元格（表格的第一行）的文本内容
+    headers = [cell.text_content().strip() for cell in header_row.xpath(".//th")]
+
+    # 获取所有数据行的文本内容
+    data = [[cell.text_content().strip() for cell in row.xpath(".//td")] for row in data_rows]
+    
+    result = [dict(zip(headers, row)) for row in data]
+    
+    for item in result:
+        cve_list[item['Name']] = item
+           
+    cve_number = len(cve_list)
     return cve_number, cve_list
+
+def append_all_item(total_list, array):
+    for item in array:
+        total_list.append(item)
 
 def search_cve_from_mitre(soft_name, session, semaphore):
     semaphore.acquire()  # 获取信号量
-    global FINAL_NUMBER
+    global TOTAL_CVE_LIST
     try:
         search_url = SEARCH_MITRE_URL + urlencode({"keyword" : soft_name})
         res = session.get(search_url, proxies=LOCAL_PROXIES)
         cve_number, cve_list = parse_response_info(res)
         with lock:
             RESULT[soft_name] = {"number": cve_number, "cve_list": cve_list}
-            FINAL_NUMBER = FINAL_NUMBER + cve_number
+            # TOTAL_CVE_LIST.append(cve_list)
+            append_all_item(TOTAL_CVE_LIST, cve_list)
     except Exception as e:
         print(f"{soft_name}查询失败：{e}")
     finally:
@@ -77,9 +91,14 @@ def main():
     for future in as_completed(futures):
         pass
     
-    print(FINAL_NUMBER)
     with open('output/result.yaml', 'w') as f:
         yaml.dump(RESULT, f, indent=4, sort_keys=False)
 
 if __name__ == "__main__":
+    # soft_name = "openssl"
+    # search_url = SEARCH_MITRE_URL + urlencode({"keyword" : soft_name})
+    # res = requests.get(search_url, proxies=LOCAL_PROXIES)
+    # cve_number, cve_list = parse_response_info(res)
+    # print(cve_number, cve_list)
     main()
+    print(len(TOTAL_CVE_LIST))

@@ -280,3 +280,34 @@
   application: 加密库
   url: https://www.lysator.liu.se/~nisse/nettle/
   description: "一个轻量级、快速和易用的密码学库，提供了对称加密、非对称加密、HMAC、DSA、EMSA-PKCS1-v1_5、RSA、HMAC-SHA1，以及 blake2、curve25519、ChaCha20 和 Poly1305 等功能，支持多种操作系统和处理器平台。"
+
+# https://blog.csdn.net/qq_21475601/article/details/95641510
+
+- name: mbedTLS
+  language: C语言
+  application: 加密库
+  url: https://tls.mbed.org/
+  description: "一个轻量级的安全协议和加密库，提供了传输层安全协议（TLS）、加密类型选项、分组密码和 hash 函数的实现、以及 X.509 证书和公钥基础设施（PKI）的基本支持。mbed TLS 最初作为 PolarSSL 和 CyaSSL 合并后的产物，现已成为 Arm Mbed 平台的一部分。"
+
+- name: LibTomCrypt
+  language: C语言
+  application: 加密库
+  url: https://www.libtom.net/LibTomCrypt/
+  description: "一个移植性强、运行速度快且兼容的加密库，提供对称加密、非对称加密、哈希函数、RSA 签名、流加密以及其他密码学算法的实现。LibTomCrypt 算法实现与许多其他库不同，其设计目标在于可读性、可移植性和易于使用，而不是极限的性能。"
+
+- name: wolfSSL
+  language: C语言
+  application: 加密库
+  url: https://www.wolfssl.com/
+  description: "一个小型、快速和可嵌入式的TLS/SSL实现，其大小和执行效率是OpenSSL的一半。wolfSSL 提供了对称加密、非对称加密、哈希、MAC、数字签名、证书验证等功能，并支持多个操作系统和编译器。"
+
+- name: tinycrypt
+  language: C语言
+  application: 加密库
+  url: https://github.com/intel/tinycrypt
+  description: "一个小型、便携式的加密库，提供对称加密、哈希函数、PRNG和HMAC等功能，适用于微控制器、传感器和其他嵌入式设备的安全性需求。tinycrypt 用于 IoT 设备，可在包括ARM Cortex M0 / M3，MSP430，Atmel AVR等无操作系统嵌入式资源受限设备上运行。"
+
+# 软件涉及加密算法
+# 为适应mitre的keyword
+- name: crypto
+
