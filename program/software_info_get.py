@@ -1,10 +1,8 @@
 import yaml
 import requests
 from urllib.parse import urlencode
-from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
-import re
 from lxml import html
 
 SEARCH_MITRE_URL = "https://cve.mitre.org/cgi-bin/cvekey.cgi?"
@@ -91,14 +89,9 @@ def main():
     for future in as_completed(futures):
         pass
     
-    with open('output/result.yaml', 'w') as f:
+    with open('output/result.yml', 'w') as f:
         yaml.dump(RESULT, f, indent=4, sort_keys=False)
 
 if __name__ == "__main__":
-    # soft_name = "openssl"
-    # search_url = SEARCH_MITRE_URL + urlencode({"keyword" : soft_name})
-    # res = requests.get(search_url, proxies=LOCAL_PROXIES)
-    # cve_number, cve_list = parse_response_info(res)
-    # print(cve_number, cve_list)
     main()
     print(len(TOTAL_CVE_LIST))
