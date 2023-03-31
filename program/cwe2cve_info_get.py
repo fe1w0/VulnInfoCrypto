@@ -6,8 +6,6 @@ import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-
-
 TIMEOUT = 20
 
 TIMESLEEP = 1
@@ -59,8 +57,7 @@ def get_all_cve_requests(cwe_id, index, result_dict, semaphore):
     finally:
         semaphore.release()  # 释放信号量
     
-def get_all_cve(cwe_id, max_index):
-    result_dict = {}
+def get_all_cve(cwe_id, max_index, result_dict):
     semaphore = threading.Semaphore(MAX_WORKERS)  
     wait_request_indexs = range(0, max_index + 1, 20)
     futures = []
@@ -79,6 +76,8 @@ def get_cve_info(cwe_id, html_text):
     cve_number = tree.xpath("//strong[@data-testid='vuln-matching-records-count']/text()")
     cve_number = cve_number[0].replace(",", "")
     cve_number = int(cve_number)
+    # 记录 总数
+    cve_dict['cve_number'] = cve_number
     print("CWE_ID: " + cwe_id +  ", Length: " + str(cve_number))
     if cve_number <= 20:
         cve_id_list = tree.xpath("//a[starts-with(@data-testid,'vuln-detail-link-')]/text()")
@@ -91,7 +90,7 @@ def get_cve_info(cwe_id, html_text):
     else:
         # NVD 数据库 每次查询最多有 20 个记录
         max_index = (int( cve_number / 20 ) + 1 ) * 20
-        cve_dict = get_all_cve(cwe_id, max_index)
+        get_all_cve(cwe_id, max_index, cve_dict)
     return cve_dict
         
     

@@ -1,3 +1,4 @@
+```
 - cwe_id: CWE-261
   description: 使用弱编码算法来保护密码的安全性。如果密码以明文形式存储在应用程序的属性或配置文件中，或者使用诸如base 64编码之类的简单编码函数来掩盖密码，那么这些努力都不能有效地保护密码。¹
   url: https://cwe.mitre.org/data/definitions/261.html
@@ -73,3 +74,7 @@
 - cwe_id: CWE-1240
   description: 硬件设计中存在一个弱点，导致硬件可以被攻击者物理访问、修改或操纵。
   url: https://cwe.mitre.org/data/definitions/1240.html
+
+```
+
+除了这些cwe_id外，还有什么类似的CWE推荐吗
