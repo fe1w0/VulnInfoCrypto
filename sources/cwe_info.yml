@@ -1,75 +1,75 @@
 - cwe_id: CWE-261
-  description: 使用弱编码算法来保护密码的安全性。如果密码以明文形式存储在应用程序的属性或配置文件中，或者使用诸如base 64编码之类的简单编码函数来掩盖密码，那么这些努力都不能有效地保护密码。¹
+  description: Obscuring a password with a trivial encoding does not protect the password.
   url: https://cwe.mitre.org/data/definitions/261.html
 
 - cwe_id: CWE-310
-  description: 与加密相关的弱点，可能影响数据的保密性和完整性。
+  description: Weaknesses in this category are related to the design and implementation of data confidentiality and integrity. Frequently these deal with the use of encoding techniques, encryption libraries, and hashing algorithms. The weaknesses in this category could lead to a degradation of the quality data if they are not addressed.
   url: https://cwe.mitre.org/data/definitions/310.html
 
 - cwe_id: CWE-321
-  description: 使用硬编码的加密密钥来加密敏感数据。如果攻击者能够获取到硬编码的密钥，那么他们就可以解密所有使用该密钥加密的数据。²
+  description: The use of a hard-coded cryptographic key significantly increases the possibility that encrypted data may be recovered.
   url: https://cwe.mitre.org/data/definitions/321.html
 
 - cwe_id: CWE-324
-  description: 使用不安全的默认配置来初始化加密算法。如果默认配置包含了弱密钥、弱模式、弱填充等，那么加密算法就可能被攻击者破解。³
+  description: The product uses a cryptographic key or password past its expiration date, which diminishes its safety significantly by increasing the timing window for cracking attacks against that key.
   url: https://cwe.mitre.org/data/definitions/324.html
 
 - cwe_id: CWE-325
-  description: 使用不正确的密码学算法来验证证书。如果证书验证算法存在缺陷或漏洞，那么攻击者就可能伪造或篡改证书，从而绕过身份验证或信任机制。⁴
+  description: The product does not implement a required step in a cryptographic algorithm, resulting in weaker encryption than advertised by the algorithm.
   url: https://cwe.mitre.org/data/definitions/325.html
 
 - cwe_id: CWE-326
-  description: 使用不足的加密强度来加密敏感数据。如果加密强度低于所需的安全级别，那么攻击者就可能利用暴力破解、密码分析等方法来解密数据。
+  description: The product stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required.
   url: https://cwe.mitre.org/data/definitions/326.html
 
 - cwe_id: CWE-327
-  description: 使用已损坏或有风险的密码学算法来加密敏感数据。如果加密算法存在已知的弱点或漏洞，那么攻击者就可能利用这些弱点或漏洞来解密数据。
+  description: The product uses a broken or risky cryptographic algorithm or protocol.
   url: https://cwe.mitre.org/data/definitions/327.html
 
 - cwe_id: CWE-328
-  description: 使用可逆的单向哈希函数来保护密码或其他敏感数据。如果哈希函数是可逆的，那么攻击者就可以通过逆向计算或查找表等方法来恢复原始数据。
+  description: The product uses an algorithm that produces a digest (output value) that does not meet security expectations for a hash function that allows an adversary to reasonably determine the original input (preimage attack), find another input that can produce the same hash (2nd preimage attack), or find multiple inputs that evaluate to the same hash (birthday attack).
   url: https://cwe.mitre.org/data/definitions/328.html
 
 - cwe_id: CWE-329
-  description: 在CBC模式下使用固定的或可预测的初始化向量（IV）来加密数据。如果IV是固定的或可预测的，那么攻击者就可以利用IV泄露信息或修改IV来篡改数据。
+  description: The product generates and uses a predictable initialization Vector (IV) with Cipher Block Chaining (CBC) Mode, which causes algorithms to be susceptible to dictionary attacks when they are encrypted under the same key.
   url: https://cwe.mitre.org/data/definitions/329.html
 
 - cwe_id: CWE-330
-  description: 使用不够随机的值来生成密码学元素，如密钥、IV、盐等。如果随机值是可预测的或有规律的，那么攻击者就可以利用这些特性来猜测或减少搜索空间，从而破解密码学元素。
+  description: The product uses insufficiently random numbers or values in a security context that depends on unpredictable numbers.
   url: https://cwe.mitre.org/data/definitions/330.html
 
 - cwe_id: CWE-331
-  description: 软件使用了产生不足熵的算法或方案，导致某些值的出现概率比其他值高，留下了可预测的模式或聚类。
+  description: The product uses an algorithm or scheme that produces insufficient entropy, leaving patterns or clusters of values that are more likely to occur than others.
   url: https://cwe.mitre.org/data/definitions/331.html
 
 - cwe_id: CWE-334
-  description: 软件使用了一个小的种子空间来生成随机值，导致攻击者可以更容易地猜测或枚举可能的值。
+  description: The number of possible random values is smaller than needed by the product, making it more susceptible to brute force attacks.
   url: https://cwe.mitre.org/data/definitions/334.html
 
 - cwe_id: CWE-335
-  description: 软件使用了一个不可靠的或不可预测的源来生成随机值，导致这些值可能被攻击者预测或控制。
+  description: The product uses a Pseudo-Random Number Generator (PRNG) but does not correctly manage seeds.
   url: https://cwe.mitre.org/data/definitions/335.html
 
 - cwe_id: CWE-338
-  description: 软件使用了一个弱的伪随机数生成器（PRNG）来生成安全相关的随机值，导致这些值可能被攻击者预测或重现。
+  description: The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.
   url: https://cwe.mitre.org/data/definitions/338.html
 
 - cwe_id: CWE-347
-  description: 软件使用了一个不正确的或不安全的方法来验证加密消息的完整性，导致攻击者可以篡改或伪造消息。
+  description: The product does not verify, or incorrectly verifies, the cryptographic signature for data.
   url: https://cwe.mitre.org/data/definitions/347.html
 
 - cwe_id: CWE-635
-  description: 软件使用了一个不正确或不安全的方法来验证用户提供的输入，导致攻击者可以绕过验证或注入恶意数据。
+  description: CWE nodes in this view (slice) were used by NIST to categorize vulnerabilities within NVD, from 2008 to 2016. This original version has been used by many other projects.
   url: https://cwe.mitre.org/data/definitions/635.html
 
 - cwe_id: CWE-699
-  description: 这是一个包含一组与软件开发相关的弱点的类别，通常涉及特定的语言或技术。
+  description: This view organizes weaknesses around concepts that are frequently used or encountered in software development. This includes all aspects of the software development lifecycle including both architecture and implementation. Accordingly, this view can align closely with the perspectives of architects, developers, educators, and assessment vendors. It provides a variety of categories that are intended to simplify navigation, browsing, and mapping.
   url: https://cwe.mitre.org/data/definitions/699.html
 
 - cwe_id: CWE-916
-  description: 软件在处理敏感数据时没有使用加密或其他保护机制，导致攻击者可以窃取或修改数据。
+  description: The product generates a hash for a password, but it uses a scheme that does not provide a sufficient level of computational effort that would make password cracking attacks infeasible or expensive.
   url: https://cwe.mitre.org/data/definitions/916.html
 
 - cwe_id: CWE-1240
-  description: 硬件设计中存在一个弱点，导致硬件可以被攻击者物理访问、修改或操纵。
+  description: To fulfill the need for a cryptographic primitive, the product implements a cryptographic algorithm using a non-standard, unproven, or disallowed/non-compliant cryptographic implementation.
   url: https://cwe.mitre.org/data/definitions/1240.html
