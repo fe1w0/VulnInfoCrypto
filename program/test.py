@@ -1,7 +1,6 @@
 # 统计数量(test)：
 import yaml
 
-
 def print_info(file_name):
     with open(file_name, 'r', encoding='utf-8') as f:
         result = yaml.safe_load(f)

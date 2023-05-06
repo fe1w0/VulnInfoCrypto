@@ -45,7 +45,7 @@ label_desc = {
 new_labels = [label for label in important_labels]
 
 # 绘制饼图
-fig, ax = plt.subplots(figsize=(12, 6))
+fig, ax = plt.subplots(figsize=(15, 6))
 wedgeprops = {"width": 0.6, "edgecolor": "white", "linewidth": 1}
 ax.pie(important_sizes, labels=new_labels, autopct="%1.1f%%", startangle=90,
        wedgeprops=wedgeprops, textprops={"fontsize": 8})
@@ -54,7 +54,7 @@ ax.set_title("Crypto CWE - Vuln Info")
 
 # 添加legend
 legend_labels = [f"{label.split()[0]} - {label_desc.get(label.split()[0], '')}" for label in sorted(set(new_labels))]
-ax.legend(legend_labels, bbox_to_anchor=(1.4, 1.0), loc='upper center', fontsize=6)
+ax.legend(legend_labels, bbox_to_anchor=(1.5, 1.0), loc='upper center', fontsize=8)
 
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
 plt.rcParams['axes.unicode_minus'] = False
