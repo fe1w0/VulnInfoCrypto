@@ -89,7 +89,7 @@ def main():
     for future in as_completed(futures):
         pass
     
-    with open('output/result.yml', 'w') as f:
+    with open('output/result_extra.yml', 'w') as f:
         yaml.dump(RESULT, f, indent=4, sort_keys=False)
 
 if __name__ == "__main__":

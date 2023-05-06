@@ -1,312 +1,318 @@
-- name: MIRACL Crypto SDK
-  language: "C/C++"
-  application: ""
-  url: "https://github.com/miracl/MIRACL"
-  description: "MIRACL Crypto SDK is a software development kit for implementing elliptic curve cryptography, pairing-based cryptography, and other cryptographic algorithms in C programming language."
+# - name: MIRACL Crypto SDK
+#   language: "C/C++"
+#   application: ""
+#   url: "https://github.com/miracl/MIRACL"
+#   description: "MIRACL Crypto SDK is a software development kit for implementing elliptic curve cryptography, pairing-based cryptography, and other cryptographic algorithms in C programming language."
 
-- name: OpenSSL 
-  language: "C/C++"
-  application: 加密库
-  url: https://www.openssl.org/
-  description: "OpenSSL 是一个强大、免费并且广泛使用的加密库，支持大量的加密算法和协议。它提供了免费的开源实现的 SSL 和 TLS 协议，以及一些密码学工具，如密码哈希函数(MD5、SHA1等)、对称和非对称加密、数字签名和随机数生成器等。"
+# - name: OpenSSL 
+#   language: "C/C++"
+#   application: 加密库
+#   url: https://www.openssl.org/
+#   description: "OpenSSL 是一个强大、免费并且广泛使用的加密库，支持大量的加密算法和协议。它提供了免费的开源实现的 SSL 和 TLS 协议，以及一些密码学工具，如密码哈希函数(MD5、SHA1等)、对称和非对称加密、数字签名和随机数生成器等。"
 
-- name: NTL 
-  language: "C/C++"
-  application: 数论库
-  url: http://www.shoup.net/ntl/
-  description: "NTL 是一个数学库，提供高效的实现了数论和代数算法的C++类。它包括大整数算术、有限域和多项式算术、矩阵算术和线性代数、以及可能涉及到的许多其他领域的工具。"
+# - name: NTL 
+#   language: "C/C++"
+#   application: 数论库
+#   url: http://www.shoup.net/ntl/
+#   description: "NTL 是一个数学库，提供高效的实现了数论和代数算法的C++类。它包括大整数算术、有限域和多项式算术、矩阵算术和线性代数、以及可能涉及到的许多其他领域的工具。"
 
-- name: Crypto++ 
-  language: "C/C++"
-  application: 加密库
-  url: https://www.cryptopp.com/
-  description: "Crypto++ 是一个免费开源的 C++ 类库，提供了许多加密算法和密码技术，如对称加密、非对称加密、数字签名、Hash 函数、消息认证码、随机数生成器等。"
+# - name: Crypto++ 
+#   language: "C/C++"
+#   application: 加密库
+#   url: https://www.cryptopp.com/
+#   description: "Crypto++ 是一个免费开源的 C++ 类库，提供了许多加密算法和密码技术，如对称加密、非对称加密、数字签名、Hash 函数、消息认证码、随机数生成器等。"
 
-- name: PBC Library 
-  language: "C/C++"
-  application: 密码库
-  url: https://crypto.stanford.edu/pbc/
-  description: "PBC（Pairing-Based Cryptography）是一种基于配对的密码学，可以用来使复杂的加密协议变得简单。PBC 库提供了椭圆曲线配对运算的实现，支持多种浪费度和不同安全级别，提供了易于使用的API，使得将PBC集成到应用程序中变得容易。"
+# - name: PBC Library 
+#   language: "C/C++"
+#   application: 密码库
+#   url: https://crypto.stanford.edu/pbc/
+#   description: "PBC（Pairing-Based Cryptography）是一种基于配对的密码学，可以用来使复杂的加密协议变得简单。PBC 库提供了椭圆曲线配对运算的实现，支持多种浪费度和不同安全级别，提供了易于使用的API，使得将PBC集成到应用程序中变得容易。"
 
-- name: NaCl 
-  language: "C/C++"
-  application: 加密库
-  url: https://nacl.cr.yp.to/
-  description: "NaCl（Networking and Cryptography library）是一个高度可移植的、跨平台的加密库，提供了一系列经过认证的密码学原语，如对称加密、非对称加密、数字签名、Hash 函数、随机数生成器等。NaCl 库强调易于使用和安全性，并且具有简单的 API 和分离的接口，从而使加密更容易且更少出错。"
+# - name: NaCl 
+#   language: "C/C++"
+#   application: 加密库
+#   url: https://nacl.cr.yp.to/
+#   description: "NaCl（Networking and Cryptography library）是一个高度可移植的、跨平台的加密库，提供了一系列经过认证的密码学原语，如对称加密、非对称加密、数字签名、Hash 函数、随机数生成器等。NaCl 库强调易于使用和安全性，并且具有简单的 API 和分离的接口，从而使加密更容易且更少出错。"
 
-- name: libsodium 
-  language: "C/C++"
-  application: 加密库
-  url: https://libsodium.gitbook.io/doc/
-  description: "libsodium 是一个现代化的、易于使用的软件库，提供了许多先进的密码原语，如对称加密、数字签名、Hash 函数和公钥加密，以及其他有用的工具，如随机数生成器、网络安全协议实现和安全内存管理函数。该库旨在简化开发人员的加密需求，同时提供更高的安全性和性能。"
+# - name: libsodium 
+#   language: "C/C++"
+#   application: 加密库
+#   url: https://libsodium.gitbook.io/doc/
+#   description: "libsodium 是一个现代化的、易于使用的软件库，提供了许多先进的密码原语，如对称加密、数字签名、Hash 函数和公钥加密，以及其他有用的工具，如随机数生成器、网络安全协议实现和安全内存管理函数。该库旨在简化开发人员的加密需求，同时提供更高的安全性和性能。"
 
-- name: RELIC 
-  language: "C/C++"
-  application: 密码库
-  url: https://github.com/relic-toolkit/relic
-  description: "RELIC 是一个开源密码工具包，提供了可扩展的、高性能的实现椭圆曲线密码学、双线性对密码学、哈希函数和对称加密算法等，支持多种安全级别。RELIC 旨在提供可移植的、易于使用的 API，并尽可能减少代码复杂度和内存占用率。"
+# - name: RELIC 
+#   language: "C/C++"
+#   application: 密码库
+#   url: https://github.com/relic-toolkit/relic
+#   description: "RELIC 是一个开源密码工具包，提供了可扩展的、高性能的实现椭圆曲线密码学、双线性对密码学、哈希函数和对称加密算法等，支持多种安全级别。RELIC 旨在提供可移植的、易于使用的 API，并尽可能减少代码复杂度和内存占用率。"
 
-- name: OpenABE 
-  language: "C/C++"
-  application: 加密库
-  url: https://github.com/zeutro/openabe
-  description: "OpenABE 是一个开源的属性基加密库，提供了一些实现 ABE 和 CP-ABE 等算法的工具和 API。它允许用户根据其属性（如年龄、身份、所属机构等）来加密和解密数据，从而更好地保护敏感信息。"
+# - name: OpenABE 
+#   language: "C/C++"
+#   application: 加密库
+#   url: https://github.com/zeutro/openabe
+#   description: "OpenABE 是一个开源的属性基加密库，提供了一些实现 ABE 和 CP-ABE 等算法的工具和 API。它允许用户根据其属性（如年龄、身份、所属机构等）来加密和解密数据，从而更好地保护敏感信息。"
 
-- name: cpabe toolkit
-  language: "C/C++"
-  application: 属性基加密工具包
-  url: https://cpabe-toolkit.github.io/
-  description: "cpabe toolkit 是一个用于实现属性基加密(symmetric key-policy attribute-based encryption, SKP-ABE) 的 C/C++ 工具包。它基于 GMP、PBC 库和 libbswabe 库，并实现了几个不同版本的属性基加密算法（如 CP-ABE、KP-ABE 等），可用于安全数据共享和访问控制等应用。"
+# - name: cpabe toolkit
+#   language: "C/C++"
+#   application: 属性基加密工具包
+#   url: https://cpabe-toolkit.github.io/
+#   description: "cpabe toolkit 是一个用于实现属性基加密(symmetric key-policy attribute-based encryption, SKP-ABE) 的 C/C++ 工具包。它基于 GMP、PBC 库和 libbswabe 库，并实现了几个不同版本的属性基加密算法（如 CP-ABE、KP-ABE 等），可用于安全数据共享和访问控制等应用。"
 
-- name: Paillier Library 
-  language: "C/C++"
-  application: 保护数字隐私的加密库
-  url: https://acsc.cs.utexas.edu/libpaillier/
-  description: "Paillier Library 是一个用于保护数字隐私的加密库，实现了 Paillier 公钥密码体制，支持加密、解密、签名和验证操作。该库也提供了一些其他的工具函数，例如生成随机数、字符串哈希函数等。"
+# - name: Paillier Library 
+#   language: "C/C++"
+#   application: 保护数字隐私的加密库
+#   url: https://acsc.cs.utexas.edu/libpaillier/
+#   description: "Paillier Library 是一个用于保护数字隐私的加密库，实现了 Paillier 公钥密码体制，支持加密、解密、签名和验证操作。该库也提供了一些其他的工具函数，例如生成随机数、字符串哈希函数等。"
 
-- name: Proxy Re-cryptography Library 
-  language: "C/C++"
-  application: 代理重加密库
-  url: http://precrypto.sba-research.org/
-  description: "Proxy Re-cryptography Library 是一个用于实现代理重加密(proxy re-encryption, PRE) 的 C/C++ 库。该库提供了多种 PRE 算法的实现，包括 Elgamal、RSA、Paillier 和 Boneh-Franklin 基于双线性映射(Bilinear map) 的 PRE 算法。"
+# - name: Proxy Re-cryptography Library 
+#   language: "C/C++"
+#   application: 代理重加密库
+#   url: http://precrypto.sba-research.org/
+#   description: "Proxy Re-cryptography Library 是一个用于实现代理重加密(proxy re-encryption, PRE) 的 C/C++ 库。该库提供了多种 PRE 算法的实现，包括 Elgamal、RSA、Paillier 和 Boneh-Franklin 基于双线性映射(Bilinear map) 的 PRE 算法。"
 
-- name: Broadcast Encryption 
-  language: "C/C++"
-  application: 广播加密库
-  url: https://github.com/robertcoopercode/broadcast-encryption
-  description: "Broadcast Encryption 是一个用于广播加密(broadcast encryption) 的 C/C++ 库。该库实现了几个不同版本的广播加密算法（如二叉树算法、BP 算法等），可用于在多方之间安全地共享信息。该库还提供了一些有用的工具函数，例如生成随机数、字符串哈希函数等。"
+# - name: Broadcast Encryption 
+#   language: "C/C++"
+#   application: 广播加密库
+#   url: https://github.com/robertcoopercode/broadcast-encryption
+#   description: "Broadcast Encryption 是一个用于广播加密(broadcast encryption) 的 C/C++ 库。该库实现了几个不同版本的广播加密算法（如二叉树算法、BP 算法等），可用于在多方之间安全地共享信息。该库还提供了一些有用的工具函数，例如生成随机数、字符串哈希函数等。"
 
-- name: JPBC
-  language: "Java"
-  application: 对双线性对和配对密码学的支持库
-  url: https://gas.dia.unisa.it/projects/jpbc/
-  description: "JPBC 是一个用于支持双线性对(bilinear pairings)和配对密码学(pairing-based cryptography)的 Java 库。它实现了一些常见的配对密码学算法，如双线性对、双线性群、椭圆曲线群等，并提供了易于使用的API进行操作。"
+# - name: JPBC
+#   language: "Java"
+#   application: 对双线性对和配对密码学的支持库
+#   url: https://gas.dia.unisa.it/projects/jpbc/
+#   description: "JPBC 是一个用于支持双线性对(bilinear pairings)和配对密码学(pairing-based cryptography)的 Java 库。它实现了一些常见的配对密码学算法，如双线性对、双线性群、椭圆曲线群等，并提供了易于使用的API进行操作。"
 
-- name: GMSSL
-  language: "Java"
-  application: GmSSL密码库的Java封装
-  url: https://github.com/guanzhi/GmSSL-Java
-  description: "GMSSL 是一个开源的密码库，是国密标准 SM2、SM3 和 SM4 的实现。GmSSL-Java 是 GMSSL 的 Java 封装，可以让 Java 开发者方便地使用 GMSSL 提供的各种密码学算法和协议。"
+# - name: GMSSL
+#   language: "Java"
+#   application: GmSSL密码库的Java封装
+#   url: https://github.com/guanzhi/GmSSL-Java
+#   description: "GMSSL 是一个开源的密码库，是国密标准 SM2、SM3 和 SM4 的实现。GmSSL-Java 是 GMSSL 的 Java 封装，可以让 Java 开发者方便地使用 GMSSL 提供的各种密码学算法和协议。"
 
-- name: GoPBC
-  language: "Golang"
-  application: 双线性对和配对密码库
-  url: https://github.com/80x86/gopbc
-  description: "GoPBC 是一个用于支持双线性对(bilinear pairings)和配对密码学(pairing-based cryptography)的 Golang 库。它实现了一些常见的配对密码学算法，如双线性对、双线性群、椭圆曲线群等，并提供了易于使用的API进行操作。"
+# - name: GoPBC
+#   language: "Golang"
+#   application: 双线性对和配对密码库
+#   url: https://github.com/80x86/gopbc
+#   description: "GoPBC 是一个用于支持双线性对(bilinear pairings)和配对密码学(pairing-based cryptography)的 Golang 库。它实现了一些常见的配对密码学算法，如双线性对、双线性群、椭圆曲线群等，并提供了易于使用的API进行操作。"
 
-- name: GoFE
-  language: "Golang"
-  application: 对有限字段和离散对数密码学的支持库
-  url: https://github.com/akalin/cryptogm
-  description: "GoFE 是一个用于支持有限字段(finite fields)和离散对数密码学(discrete logarithm cryptography)的 Golang 库。它实现了一些常见的有限字段和离散对数密码学算法，如有限域上的椭圆曲线加密(ECC)、Diffie-Hellman密钥交换协议(DH)等，并提供了易于使用的API进行操作。"
+# - name: GoFE
+#   language: "Golang"
+#   application: 对有限字段和离散对数密码学的支持库
+#   url: https://github.com/akalin/cryptogm
+#   description: "GoFE 是一个用于支持有限字段(finite fields)和离散对数密码学(discrete logarithm cryptography)的 Golang 库。它实现了一些常见的有限字段和离散对数密码学算法，如有限域上的椭圆曲线加密(ECC)、Diffie-Hellman密钥交换协议(DH)等，并提供了易于使用的API进行操作。"
 
-- name: CONIKS
-  language: "Golang"
-  application: 安全命名系统
-  url: https://coniks.cs.princeton.edu/
-  description: "CONIKS 是一个安全命名系统，用于为公共密钥基础设施(PKI)中的用户提供透明的、可验证的名称到公钥映射。该系统通过使用 Merkle Tree 和公钥绑定技术，可以检测到恶意用户试图更改其公钥。CONIKS 的 Golang 实现提供了易于使用的API，以便应用程序可以轻松地将其集成到现有的安全架构中。"
+# - name: CONIKS
+#   language: "Golang"
+#   application: 安全命名系统
+#   url: https://coniks.cs.princeton.edu/
+#   description: "CONIKS 是一个安全命名系统，用于为公共密钥基础设施(PKI)中的用户提供透明的、可验证的名称到公钥映射。该系统通过使用 Merkle Tree 和公钥绑定技术，可以检测到恶意用户试图更改其公钥。CONIKS 的 Golang 实现提供了易于使用的API，以便应用程序可以轻松地将其集成到现有的安全架构中。"
 
-- name: Private Join and Compute
-  language: "C++"
-  application: ""
-  url: "https://github.com/google/private-join-and-compute"
-  description: "Google's open source privacy-enhancing technology library, including basic public key cryptographic algorithms such as ECC, Paillier, ElGamal, etc."
+# - name: Private Join and Compute
+#   language: "C++"
+#   application: ""
+#   url: "https://github.com/google/private-join-and-compute"
+#   description: "Google's open source privacy-enhancing technology library, including basic public key cryptographic algorithms such as ECC, Paillier, ElGamal, etc."
 
-- name: CryptoTools
-  language: "C++"
-  application: ""
-  url: "https://github.com/ladnir/cryptoTools"
-  description: "CryptoTools is a portable C++14 library that includes a range of tools for building cryptographic protocols. This includes asynchronous networking (Boost Asio), several fast primitives such as AES (AES-NI), Blake2 (assembly), and elliptic curve crypto (Relic-Toolkit, Miracl, or libsodium). There are also several utilities customized for implementing protocols."
+# - name: CryptoTools
+#   language: "C++"
+#   application: ""
+#   url: "https://github.com/ladnir/cryptoTools"
+#   description: "CryptoTools is a portable C++14 library that includes a range of tools for building cryptographic protocols. This includes asynchronous networking (Boost Asio), several fast primitives such as AES (AES-NI), Blake2 (assembly), and elliptic curve crypto (Relic-Toolkit, Miracl, or libsodium). There are also several utilities customized for implementing protocols."
 
-- name: ENCRYPTO_utils
-  language: "C++"
-  application: ""
-  url: "https://github.com/encryptogroup/ENCRYPTO_utils"
-  description: "Encryption tools for building ABY and network layers."
+# - name: ENCRYPTO_utils
+#   language: "C++"
+#   application: ""
+#   url: "https://github.com/encryptogroup/ENCRYPTO_utils"
+#   description: "Encryption tools for building ABY and network layers."
 
-- name: TFHE
-  language: "C/C++"
-  application: ""
-  url: "https://github.com/tfhe/tfhe"
-  description: "TFHE is an open-source homomorphic encryption library released under the Apache 2.0 license. The scheme comes from the paper 'Faster fully homomorphic encryption: Bootstrapping in less than 0.1 seconds' and features faster gate-by-gate bootstrapping."
+# - name: TFHE
+#   language: "C/C++"
+#   application: ""
+#   url: "https://github.com/tfhe/tfhe"
+#   description: "TFHE is an open-source homomorphic encryption library released under the Apache 2.0 license. The scheme comes from the paper 'Faster fully homomorphic encryption: Bootstrapping in less than 0.1 seconds' and features faster gate-by-gate bootstrapping."
 
-- name: SEAL
-  language: "C/C++"
-  application: ""
-  url: "https://github.com/microsoft/SEAL"
-  description: "Microsoft SEAL is an easy-to-use open-source (MIT licensed) homomorphic encryption library developed by the Cryptography and Privacy Research group at Microsoft. Microsoft SEAL is written in modern standard C++, and is easy to compile and run in many different environments. For more information about the Microsoft SEAL project, see sealcrypto.org."
+# - name: SEAL
+#   language: "C/C++"
+#   application: ""
+#   url: "https://github.com/microsoft/SEAL"
+#   description: "Microsoft SEAL is an easy-to-use open-source (MIT licensed) homomorphic encryption library developed by the Cryptography and Privacy Research group at Microsoft. Microsoft SEAL is written in modern standard C++, and is easy to compile and run in many different environments. For more information about the Microsoft SEAL project, see sealcrypto.org."
 
-- name: palisade
-  language: "C/C++"
-  application: ""
-  url: "https://palisade-crypto.org/"
-  description: "PALISADE is an open-source project that provides modular lattice cryptography building blocks and efficient implementations of leading homomorphic encryption schemes. PALISADE is designed for usability, providing simpler APIs, modularity, cross-platform support, and integration with hardware accelerators. PALISADE is compliant with the HomomorphicEncryption.org homomorphic encryption security standard."
+# - name: palisade
+#   language: "C/C++"
+#   application: ""
+#   url: "https://palisade-crypto.org/"
+#   description: "PALISADE is an open-source project that provides modular lattice cryptography building blocks and efficient implementations of leading homomorphic encryption schemes. PALISADE is designed for usability, providing simpler APIs, modularity, cross-platform support, and integration with hardware accelerators. PALISADE is compliant with the HomomorphicEncryption.org homomorphic encryption security standard."
 
-- name: HELIB
-  language: "C/C++"
-  application: ""
-  url: ""
-  description: "HELIB is a homomorphic encryption library developed by IBM."
+# - name: HELIB
+#   language: "C/C++"
+#   application: ""
+#   url: ""
+#   description: "HELIB is a homomorphic encryption library developed by IBM."
 
-- name: lattigo
-  language: "Golang"
-  application: ""
-  url: "https://github.com/tuneinsight/lattigo"
-  description: "Lattigo is a Go module that implements Ring-Learning-With-Errors (RLWE)-based homomorphic primitives and secure protocols based on Multiparty Homomorphic Encryption (MHE). The library is characterized by its pure Go implementation that enables cross-platform builds, including WASM compilation for browser clients. Lattigo aims to support distributed systems and microservices."
+# - name: lattigo
+#   language: "Golang"
+#   application: ""
+#   url: "https://github.com/tuneinsight/lattigo"
+#   description: "Lattigo is a Go module that implements Ring-Learning-With-Errors (RLWE)-based homomorphic primitives and secure protocols based on Multiparty Homomorphic Encryption (MHE). The library is characterized by its pure Go implementation that enables cross-platform builds, including WASM compilation for browser clients. Lattigo aims to support distributed systems and microservices."
 
-- name: bellman
-  language: "Rust"
-  application: ""
-  url: https://github.com/zkcrypto/bellman
-  description: 提供了电路特性和原始结构，以及基本的小工具实现，如布尔和数字的抽象。
+# - name: bellman
+#   language: "Rust"
+#   application: ""
+#   url: https://github.com/zkcrypto/bellman
+#   description: 提供了电路特性和原始结构，以及基本的小工具实现，如布尔和数字的抽象。
 
-- name: Bulletproofs
-  language: "Rust"
-  application: ""
-  url: https://github.com/dalek-cryptography/bulletproofs
-  description: 目前Bulletproofs方案实现最快的库，具有单一和聚合范围证明、强类型的多方计算，以及用于证明任意语句的可编程约束系统API。
+# - name: Bulletproofs
+#   language: "Rust"
+#   application: ""
+#   url: https://github.com/dalek-cryptography/bulletproofs
+#   description: 目前Bulletproofs方案实现最快的库，具有单一和聚合范围证明、强类型的多方计算，以及用于证明任意语句的可编程约束系统API。
 
-- name: libsnark
-  language: "C/C++"
-  application: zkSNARK密码学方法的完整性证明/验证
-  url: https://github.com/scipr-lab/libsnark
-  description: 实现了zkSNARK方案，是一种在零知识中证明/验证计算完整性的密码学方法。
+# - name: libsnark
+#   language: "C/C++"
+#   application: zkSNARK密码学方法的完整性证明/验证
+#   url: https://github.com/scipr-lab/libsnark
+#   description: 实现了zkSNARK方案，是一种在零知识中证明/验证计算完整性的密码学方法。
 
-- name: blockchain-crypto-mpc
-  language: "C/C++"
-  application: 加密基础
-  url: https://github.com/unboundsecurity/blockchain-crypto-mpc
-  description: 解决与加密资产和区块链应用相关的最困难的挑战之一。保护加密签名密钥和种子秘密。
+# - name: blockchain-crypto-mpc
+#   language: "C/C++"
+#   application: 加密基础
+#   url: https://github.com/unboundsecurity/blockchain-crypto-mpc
+#   description: 解决与加密资产和区块链应用相关的最困难的挑战之一。保护加密签名密钥和种子秘密。
 
-- name: libSTARK
-  language: "C/C++"
-  application: 可扩展和透明的知识论证系统
-  url: https://github.com/elibensasson/libSTARK
-  description: 实现了可扩展和透明的知识论证（STARK）系统，这些系统可以在有或没有零知识（ZK）的情况下执行，并且可以被设计成交互式或非交互式协议。zk-STARK具有通用性、透明性、伸缩性和后量子密码安全等性质。
+# - name: libSTARK
+#   language: "C/C++"
+#   application: 可扩展和透明的知识论证系统
+#   url: https://github.com/elibensasson/libSTARK
+#   description: 实现了可扩展和透明的知识论证（STARK）系统，这些系统可以在有或没有零知识（ZK）的情况下执行，并且可以被设计成交互式或非交互式协议。zk-STARK具有通用性、透明性、伸缩性和后量子密码安全等性质。
 
-- name: SolCrypto
-  language: ["Solidity", "Python"]
-  application: 各种密码学原语实现
-  url: https://github.com/HarryR/solcrypto
-  description: 包含了环签名、知识证明、Packed ECDSA签名等密码学原语的Solidity和Python实现，它们被设计成一起工作，并使其更容易使用可组合的原语建立新的密码系统。这些实现可以轻松地切换到 secp256k1 或 alt_bn128 曲线。
+# - name: SolCrypto
+#   language: ["Solidity", "Python"]
+#   application: 各种密码学原语实现
+#   url: https://github.com/HarryR/solcrypto
+#   description: 包含了环签名、知识证明、Packed ECDSA签名等密码学原语的Solidity和Python实现，它们被设计成一起工作，并使其更容易使用可组合的原语建立新的密码系统。这些实现可以轻松地切换到 secp256k1 或 alt_bn128 曲线。
 
-- name: vrf-solidity
-  language: Solidity
-  application: 可验证随机函数(VRFs)的快速有效实现
-  url: https://github.com/witnet/vrf-solidity
-  description: 基于椭圆曲线(EC) Secp256k1实现了VRF证明的验证函数。
+# - name: vrf-solidity
+#   language: Solidity
+#   application: 可验证随机函数(VRFs)的快速有效实现
+#   url: https://github.com/witnet/vrf-solidity
+#   description: 基于椭圆曲线(EC) Secp256k1实现了VRF证明的验证函数。
 
-- name: liboqs
-  language: "C/C++"
-  application: 量子安全加密算法开源实现
-  url: https://github.com/open-quantum-safe/liboqs
-  description: "用于量子安全加密算法的开放源码C库。集成了量子安全的密钥封装机制（KEM）和数字签名算法的开源实现；是由Douglas Stebila和Michele Mosca领导的开放量子安全（OQS）项目的一部分，旨在开发量子安全加密技术并将其整合到应用程序中，以促进在现实世界中的部署和测试。通过OpenSSL和OpenSSH提供了将liboqs集成到TLS和SSH的原型。"
+# - name: liboqs
+#   language: "C/C++"
+#   application: 量子安全加密算法开源实现
+#   url: https://github.com/open-quantum-safe/liboqs
+#   description: "用于量子安全加密算法的开放源码C库。集成了量子安全的密钥封装机制（KEM）和数字签名算法的开源实现；是由Douglas Stebila和Michele Mosca领导的开放量子安全（OQS）项目的一部分，旨在开发量子安全加密技术并将其整合到应用程序中，以促进在现实世界中的部署和测试。通过OpenSSL和OpenSSH提供了将liboqs集成到TLS和SSH的原型。"
 
-- name: rlwekex
-  language: "C/C++"
-  application: 基于Ring LWE问题实现密钥交换协议
-  url: https://github.com/dstebila/rlwekex
-  description: "基于以下论文中的 Ring LWE 问题实现密钥交换协议：Joppe W. Bos, Craig Costello, Michael Naehrig, Douglas Stebila. Post-quantum key exchange for the TLS protocol from the ring learning with errors problem. In Proc. IEEE Symposium on Security and Privacy (S&P) 2015, pp. 553-570. IEEE, May 2015. DOI:10.1109/SP.2015.40, Eprint http://eprint.iacr.org/2014/599。"
+# - name: rlwekex
+#   language: "C/C++"
+#   application: 基于Ring LWE问题实现密钥交换协议
+#   url: https://github.com/dstebila/rlwekex
+#   description: "基于以下论文中的 Ring LWE 问题实现密钥交换协议：Joppe W. Bos, Craig Costello, Michael Naehrig, Douglas Stebila. Post-quantum key exchange for the TLS protocol from the ring learning with errors problem. In Proc. IEEE Symposium on Security and Privacy (S&P) 2015, pp. 553-570. IEEE, May 2015. DOI:10.1109/SP.2015.40, Eprint http://eprint.iacr.org/2014/599。"
 
 
-- name: Apache Commons Crypto
-  language: Java
-  application: 加密库
-  url: https://commons.apache.org/proper/commons-crypto/
-  description: "使用 AES-NI (Advanced Encryption Standard New Instructions) 进行优化的加密库。提供了加密级别和流级别的 API。开发者可以使用最少代码来实现高性能的 AES 加解密应用。"
+# - name: Apache Commons Crypto
+#   language: Java
+#   application: 加密库
+#   url: https://commons.apache.org/proper/commons-crypto/
+#   description: "使用 AES-NI (Advanced Encryption Standard New Instructions) 进行优化的加密库。提供了加密级别和流级别的 API。开发者可以使用最少代码来实现高性能的 AES 加解密应用。"
 
-- name: Jasypt
-  language: Java
-  application: Java类
-  url: http://www.jasypt.org/
-  description: "Jasypt是一个Java类库，用于简化加密操作并且支持常见的加密算法。它提供了易于使用的API，可用于将密码、文件和消息加密，以保护机密数据的安全性。"
+# - name: Jasypt
+#   language: Java
+#   application: Java类
+#   url: http://www.jasypt.org/
+#   description: "Jasypt是一个Java类库，用于简化加密操作并且支持常见的加密算法。它提供了易于使用的API，可用于将密码、文件和消息加密，以保护机密数据的安全性。"
 
-- name: Bouncy Castle
-  language: Java
-  application: 轻量级密码术包
-  url: https://www.bouncycastle.org/
-  description: "一种用于Java平台的开放源码的轻量级密码术包，它实现了许多密码学协议和算法，如SSL/TLS、S/MIME、PGP、OID、X.509证书和CRL、CMS、SSH、密码哈希函数（MD5、SHA1、SHA256等）、对称和非对称加密、数字签名、随机数生成器等。"
+# - name: Bouncy Castle
+#   language: Java
+#   application: 轻量级密码术包
+#   url: https://www.bouncycastle.org/
+#   description: "一种用于Java平台的开放源码的轻量级密码术包，它实现了许多密码学协议和算法，如SSL/TLS、S/MIME、PGP、OID、X.509证书和CRL、CMS、SSH、密码哈希函数（MD5、SHA1、SHA256等）、对称和非对称加密、数字签名、随机数生成器等。"
 
-- name: Tink
-  language: 多语言
-  application: 加密开发库
-  url: https://github.com/google/tink
-  description: "一个多语言、跨平台的加密开发库，提供安全的实现和易于使用的API，支持常见密码学需求，如对称加密、非对称加密、数字签名、MAC、散列函数和伪随机数生成器。"
+# - name: Tink
+#   language: 多语言
+#   application: 加密开发库
+#   url: https://github.com/google/tink
+#   description: "一个多语言、跨平台的加密开发库，提供安全的实现和易于使用的API，支持常见密码学需求，如对称加密、非对称加密、数字签名、MAC、散列函数和伪随机数生成器。"
 
-- name: EverCrypt
-  language: ""
-  application: 加密工具
-  url: https://github.com/project-everest/hacl-star/tree/master/providers/evercrypt
-  description: "在GitHub上发布了加密工具EverCrypt，它是HACL*项目的一部分，提供一组经过验证的密码学原语，包括对称加密、Hash功能和MAC。"
+# - name: EverCrypt
+#   language: ""
+#   application: 加密工具
+#   url: https://github.com/project-everest/hacl-star/tree/master/providers/evercrypt
+#   description: "在GitHub上发布了加密工具EverCrypt，它是HACL*项目的一部分，提供一组经过验证的密码学原语，包括对称加密、Hash功能和MAC。"
 
-- name: 天安TASSL
-  language: ""
-  application: 基于openssl
-  url: http://www.tass.com.cn/portal/research/viewpoint_view-36.html
-  description: "基于 OpenSSL 的加密库 TASSL，是国内的产权加密技术，支持常用的 SSL/TLS 协议版本。"
+# - name: 天安TASSL
+#   language: ""
+#   application: 基于openssl
+#   url: http://www.tass.com.cn/portal/research/viewpoint_view-36.html
+#   description: "基于 OpenSSL 的加密库 TASSL，是国内的产权加密技术，支持常用的 SSL/TLS 协议版本。"
 
-- name: PoralSSL
-  language: ""
-  application: 开源框架
-  url: https://tls.mbed.org/tech-updates/blog/a-tale-of-two-libraries-openssl-and-mbedtls
-  description: "一个轻量级的开源框架，提供了许多不同类型的加密算法和协议的实现，如TLS、DTLS、HTTPS、SSH、IPsec等。PolarSSL 已被 ARM 收购并更名为 mbed TLS。"
+# - name: PoralSSL
+#   language: ""
+#   application: 开源框架
+#   url: https://tls.mbed.org/tech-updates/blog/a-tale-of-two-libraries-openssl-and-mbedtls
+#   description: "一个轻量级的开源框架，提供了许多不同类型的加密算法和协议的实现，如TLS、DTLS、HTTPS、SSH、IPsec等。PolarSSL 已被 ARM 收购并更名为 mbed TLS。"
 
-- name: Cryptlib
-  language: C语言
-  application: 加密库
-  url: https://www.cs.auckland.ac.nz/~pgut001/cryptlib/
-  description: "一个常见密码学功能的库，支持对称加密、非对称加密、数字签名、证书管理、SSL、S/MIME、OpenPGP以及  PKCS #11 等功能。"
+# - name: Cryptlib
+#   language: C语言
+#   application: 加密库
+#   url: https://www.cs.auckland.ac.nz/~pgut001/cryptlib/
+#   description: "一个常见密码学功能的库，支持对称加密、非对称加密、数字签名、证书管理、SSL、S/MIME、OpenPGP以及  PKCS #11 等功能。"
 
-- name: Keyczar
-  language: 多语言
-  application: 加密库
-  url: https://github.com/Keyczar/keyczar
-  description: "一个非常易用的开源加密库，提供简单而安全的API，支持AES、RSA、DSA、HMAC、HMAC-SHA1、SHA1，以及HMAC-SHA256 等密码学算法，适用于Java、Python、C++等多种编程语言。"
+# - name: Keyczar
+#   language: 多语言
+#   application: 加密库
+#   url: https://github.com/Keyczar/keyczar
+#   description: "一个非常易用的开源加密库，提供简单而安全的API，支持AES、RSA、DSA、HMAC、HMAC-SHA1、SHA1，以及HMAC-SHA256 等密码学算法，适用于Java、Python、C++等多种编程语言。"
 
-- name: Botan
-  language: C++
-  application: 加密库
-  url: https://botan.randombit.net/
-  description: "一个C++语言的密码学库，提供丰富、现代和易用的API，支持对称加密、非对称加密、数字签名、证书管理、TLS和一些杂项算法等功能。"
+# - name: Botan
+#   language: C++
+#   application: 加密库
+#   url: https://botan.randombit.net/
+#   description: "一个C++语言的密码学库，提供丰富、现代和易用的API，支持对称加密、非对称加密、数字签名、证书管理、TLS和一些杂项算法等功能。"
 
-- name: GnuPG
-  language: C语言
-  application: 加密工具
-  url: https://www.gnupg.org/
-  description: "一个自由、开源的隐私工具，支持Pgp、S/MIME和OpenPGP等协议，提供加密、数字签名、认证和键管理等功能。GnuPG 最初由德国的Werner Koch 开发。"
+# - name: GnuPG
+#   language: C语言
+#   application: 加密工具
+#   url: https://www.gnupg.org/
+#   description: "一个自由、开源的隐私工具，支持Pgp、S/MIME和OpenPGP等协议，提供加密、数字签名、认证和键管理等功能。GnuPG 最初由德国的Werner Koch 开发。"
 
-- name: Nettle
-  language: C语言
-  application: 加密库
-  url: https://www.lysator.liu.se/~nisse/nettle/
-  description: "一个轻量级、快速和易用的密码学库，提供了对称加密、非对称加密、HMAC、DSA、EMSA-PKCS1-v1_5、RSA、HMAC-SHA1，以及 blake2、curve25519、ChaCha20 和 Poly1305 等功能，支持多种操作系统和处理器平台。"
+# - name: Nettle
+#   language: C语言
+#   application: 加密库
+#   url: https://www.lysator.liu.se/~nisse/nettle/
+#   description: "一个轻量级、快速和易用的密码学库，提供了对称加密、非对称加密、HMAC、DSA、EMSA-PKCS1-v1_5、RSA、HMAC-SHA1，以及 blake2、curve25519、ChaCha20 和 Poly1305 等功能，支持多种操作系统和处理器平台。"
 
-# https://blog.csdn.net/qq_21475601/article/details/95641510
+# # https://blog.csdn.net/qq_21475601/article/details/95641510
 
-- name: mbedTLS
-  language: C语言
-  application: 加密库
-  url: https://tls.mbed.org/
-  description: "一个轻量级的安全协议和加密库，提供了传输层安全协议（TLS）、加密类型选项、分组密码和 hash 函数的实现、以及 X.509 证书和公钥基础设施（PKI）的基本支持。mbed TLS 最初作为 PolarSSL 和 CyaSSL 合并后的产物，现已成为 Arm Mbed 平台的一部分。"
+# - name: mbedTLS
+#   language: C语言
+#   application: 加密库
+#   url: https://tls.mbed.org/
+#   description: "一个轻量级的安全协议和加密库，提供了传输层安全协议（TLS）、加密类型选项、分组密码和 hash 函数的实现、以及 X.509 证书和公钥基础设施（PKI）的基本支持。mbed TLS 最初作为 PolarSSL 和 CyaSSL 合并后的产物，现已成为 Arm Mbed 平台的一部分。"
 
-- name: LibTomCrypt
-  language: C语言
-  application: 加密库
-  url: https://www.libtom.net/LibTomCrypt/
-  description: "一个移植性强、运行速度快且兼容的加密库，提供对称加密、非对称加密、哈希函数、RSA 签名、流加密以及其他密码学算法的实现。LibTomCrypt 算法实现与许多其他库不同，其设计目标在于可读性、可移植性和易于使用，而不是极限的性能。"
+# - name: LibTomCrypt
+#   language: C语言
+#   application: 加密库
+#   url: https://www.libtom.net/LibTomCrypt/
+#   description: "一个移植性强、运行速度快且兼容的加密库，提供对称加密、非对称加密、哈希函数、RSA 签名、流加密以及其他密码学算法的实现。LibTomCrypt 算法实现与许多其他库不同，其设计目标在于可读性、可移植性和易于使用，而不是极限的性能。"
 
-- name: wolfSSL
-  language: C语言
-  application: 加密库
-  url: https://www.wolfssl.com/
-  description: "一个小型、快速和可嵌入式的TLS/SSL实现，其大小和执行效率是OpenSSL的一半。wolfSSL 提供了对称加密、非对称加密、哈希、MAC、数字签名、证书验证等功能，并支持多个操作系统和编译器。"
+# - name: wolfSSL
+#   language: C语言
+#   application: 加密库
+#   url: https://www.wolfssl.com/
+#   description: "一个小型、快速和可嵌入式的TLS/SSL实现，其大小和执行效率是OpenSSL的一半。wolfSSL 提供了对称加密、非对称加密、哈希、MAC、数字签名、证书验证等功能，并支持多个操作系统和编译器。"
 
-- name: tinycrypt
-  language: C语言
-  application: 加密库
-  url: https://github.com/intel/tinycrypt
-  description: "一个小型、便携式的加密库，提供对称加密、哈希函数、PRNG和HMAC等功能，适用于微控制器、传感器和其他嵌入式设备的安全性需求。tinycrypt 用于 IoT 设备，可在包括ARM Cortex M0 / M3，MSP430，Atmel AVR等无操作系统嵌入式资源受限设备上运行。"
+# - name: tinycrypt
+#   language: C语言
+#   application: 加密库
+#   url: https://github.com/intel/tinycrypt
+#   description: "一个小型、便携式的加密库，提供对称加密、哈希函数、PRNG和HMAC等功能，适用于微控制器、传感器和其他嵌入式设备的安全性需求。tinycrypt 用于 IoT 设备，可在包括ARM Cortex M0 / M3，MSP430，Atmel AVR等无操作系统嵌入式资源受限设备上运行。"
 
-# 软件涉及加密算法
-# 为适应mitre的keyword
-- name: crypto
+# # 软件涉及加密算法
+# # 为适应mitre的keyword
+# - name: crypto
+
+- name: GMP
+
+- name: HEXL
+
+- name: GSL

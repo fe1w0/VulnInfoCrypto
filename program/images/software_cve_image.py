@@ -24,7 +24,7 @@ get_file_info("output/result.yml")
 sort_func = partial(sorted, key=lambda x: -x[1])
 sorted_data = sort_func(zip(labels, sizes))
 
-appropriate_size = 15
+appropriate_size = 8
 
 # 取出size最多的前6个标签和数据
 important_labels = [label for label, size in sorted_data[:appropriate_size]]

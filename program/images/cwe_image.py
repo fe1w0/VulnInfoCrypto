@@ -32,12 +32,36 @@ other_label = "Other"
 important_sizes.append(other_size)
 important_labels.append(other_label)
 
+# 取得标签描述
+label_desc = {
+    'CWE-310' : '与数据机密性和完整性的设计和实现有关。\n通常涉及使用加密技术、加密库和哈希算法',
+    'CWE-326' : '产品使用的加密方案理论上来说是可行的，\n但所需的保护级别上并不足够强大',
+    'CWE-327' : '使用了一个有缺陷的或危险的加密算法或协议',
+    'CWE-330' : '由于产品在安全相关的上下文中使用了不充分随机的数字或值。',
+    'CWE-347' : '产品不验证或错误地验证数据的加密签名',
+    'Other': '其他密码学问题'
+    }
+
+new_labels = [label for label in important_labels]
+
 # 绘制饼图
-fig, ax = plt.subplots(figsize=(6, 5))
-wedgeprops = {"width": 0.6, "edgecolor": "white", "linewidth": 2}
-ax.pie(important_sizes, labels=important_labels, autopct="%1.1f%%", startangle=90,
+fig, ax = plt.subplots(figsize=(12, 6))
+wedgeprops = {"width": 0.6, "edgecolor": "white", "linewidth": 1}
+ax.pie(important_sizes, labels=new_labels, autopct="%1.1f%%", startangle=90,
        wedgeprops=wedgeprops, textprops={"fontsize": 8})
 ax.set_title("Crypto CWE - Vuln Info")
 
+
+# 添加legend
+legend_labels = [f"{label.split()[0]} - {label_desc.get(label.split()[0], '')}" for label in sorted(set(new_labels))]
+ax.legend(legend_labels, bbox_to_anchor=(1.4, 1.0), loc='upper center', fontsize=6)
+
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False
+
+# 尝试添加引导线
+# https://blog.csdn.net/mighty13/article/details/116010035
+
+# 保存并展示图像
+plt.savefig('output/images/Crytpo_CWE.svg', dpi=300, format='svg')
 # plt.show()
-plt.savefig('output/images/Crytpo_CWE.svg', format='svg')
