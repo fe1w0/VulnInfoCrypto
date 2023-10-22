@@ -1,4 +1,4 @@
-Project: VulnInfoCrytpo
+Project: VulnInfoCrypto
 ---
 # Introduction
 
